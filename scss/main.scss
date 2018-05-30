@@ -1,0 +1,148 @@
+// all vars
+$spacer: 1rem;
+
+$brand-primary: #123a68;
+$gray: #aaaaab;
+$light-gray: #e0e0e1;
+$lightest-gray: #fdfdfd;
+$orange: #ff7100;
+
+$font-size-h1: 2rem;
+$font-size-h2: 1.5rem;
+$font-size-h3: 1.3rem;
+$font-size-base: 1rem;
+$font-size-sm: 0.8rem;
+
+
+.hidden, .is-hidden {
+	display: none !important;
+}
+
+// global
+a {
+	color: $brand-primary;
+	text-decoration: underline;
+	&:hover {
+		color: $brand-primary;
+	}
+}
+
+p {
+	font-size: $font-size-base;
+	&.lead {
+		font-weight: bold;
+	}
+}
+
+#signup-form {
+	margin: $spacer 0;
+	h2 {
+		color: $brand-primary;
+	}
+	.form {
+		input, select {
+			display: inline-block;
+			margin-bottom: $spacer;
+			height: 37px;
+			margin-right: 1.5%;
+			padding: 0 $spacer/2;
+			border: 1px solid $light-gray;
+			color: #49372f;
+		}
+		input[type="text"] {
+			&:focus {
+				outline-style:none;
+				box-shadow:none;
+				border-color:transparent;
+				border: 1px solid $gray;
+				background: $lightest-gray;
+			}
+		}
+		select {
+			height: 37px;
+			border-radius: 5px;
+			width: 20%;
+			@media all and (max-width: 768px) {
+				width: 50%;
+			}
+			&:focus {
+				outline-style:none;
+				box-shadow:none;
+				border-color:transparent;
+				border: 1px solid $gray;
+				background: $lightest-gray;
+			}
+		}
+		input.sp-name {
+			width: 36.7%;
+			@media all and (max-width: 768px) {
+				width: 100%;
+			}
+		}
+		input.sp-email {
+			display: block;
+			width: 98%;
+			@media all and (max-width: 768px) {
+				width: 100%;
+			}
+		}
+	}
+	p.required-fields  {
+		font-weight: bold;
+		color: $brand-primary;
+	}
+	.select-option-wrapper {
+		cursor: pointer;
+		@media all and (max-width: 992px) {
+			margin-bottom: $spacer*2;
+		}
+		&:hover {
+			> img {
+				transform: scale(1);
+			}
+		}
+		> img {
+			margin-bottom: $spacer;
+			border: 5px solid $brand-primary;
+			border-radius: 100%;
+			transition: all 0.3s;
+			transform: scale(0.96);
+		}
+		.select-option {
+			p {
+				margin-bottom: 0;
+				color: $brand-primary !important;
+				font-size: $font-size-h3;
+				font-weight: bold;
+				box-sizing: border-box;
+			}
+			.not-selected {
+				height: 26px;
+				width: 26px;
+				display: block;
+				margin: 0 auto;
+				margin-top: 1px;
+				border: 2px solid $brand-primary;
+				border-radius: 100%;
+				background: none;
+			}
+			.selected-img {
+				display: none;
+				margin: 0 auto;
+			}
+		}
+		&.selected {
+			> img {
+				border: 5px solid $orange;
+			}
+			.select-option {
+				.not-selected {
+					display: none;
+				}
+				.selected-img {
+					display: block;
+				}
+			}
+		}
+	}
+}

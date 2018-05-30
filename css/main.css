@@ -1,0 +1,189 @@
+.hidden, .is-hidden {
+  display: none !important; }
+
+a {
+  color: #123a68;
+  text-decoration: underline; }
+  a:hover {
+    color: #123a68; }
+
+p {
+  font-size: 1rem; }
+  p.lead {
+    font-weight: bold; }
+
+.my-logo {
+  background: #123a68;
+  padding: 0.5rem 0; }
+  .my-logo img {
+    max-height: 100px; }
+
+.my-content .my-title {
+  color: #123a68;
+  font-size: 2rem;
+  margin: 0 0 1rem 0; }
+
+#signup-form {
+  margin: 1rem 0; }
+  #signup-form h2 {
+    color: #123a68; }
+  #signup-form .form input, #signup-form .form select {
+    display: inline-block;
+    margin-bottom: 1rem;
+    height: 37px;
+    margin-right: 1.5%;
+    padding: 0 0.5rem;
+    border: 1px solid #e0e0e1;
+    color: #49372f; }
+  #signup-form .form input[type="text"]:focus {
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+    border: 1px solid #aaaaab;
+    background: #fdfdfd; }
+  #signup-form .form select {
+    height: 37px;
+    border-radius: 5px;
+    width: 20%; }
+    @media all and (max-width: 768px) {
+      #signup-form .form select {
+        width: 50%; } }
+    #signup-form .form select:focus {
+      outline-style: none;
+      box-shadow: none;
+      border-color: transparent;
+      border: 1px solid #aaaaab;
+      background: #fdfdfd; }
+  #signup-form .form input.sp-name {
+    width: 36.7%; }
+    @media all and (max-width: 768px) {
+      #signup-form .form input.sp-name {
+        width: 100%; } }
+  #signup-form .form input.sp-email {
+    display: block;
+    width: 98%; }
+    @media all and (max-width: 768px) {
+      #signup-form .form input.sp-email {
+        width: 100%; } }
+  #signup-form p.required-fields {
+    font-weight: bold;
+    color: #123a68; }
+  #signup-form .select-option-wrapper {
+    cursor: pointer; }
+    @media all and (max-width: 992px) {
+      #signup-form .select-option-wrapper {
+        margin-bottom: 2rem; } }
+    #signup-form .select-option-wrapper:hover > img {
+      transform: scale(1); }
+    #signup-form .select-option-wrapper > img {
+      margin-bottom: 1rem;
+      border: 5px solid #123a68;
+      border-radius: 100%;
+      transition: all 0.3s;
+      transform: scale(0.96); }
+    #signup-form .select-option-wrapper .select-option p {
+      margin-bottom: 0;
+      color: #123a68 !important;
+      font-size: 1.3rem;
+      font-weight: bold;
+      box-sizing: border-box; }
+    #signup-form .select-option-wrapper .select-option .not-selected {
+      height: 26px;
+      width: 26px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1px;
+      border: 2px solid #123a68;
+      border-radius: 100%;
+      background: none; }
+    #signup-form .select-option-wrapper .select-option .selected-img {
+      display: none;
+      margin: 0 auto; }
+    #signup-form .select-option-wrapper.selected > img {
+      border: 5px solid #ff7100; }
+    #signup-form .select-option-wrapper.selected .select-option .not-selected {
+      display: none; }
+    #signup-form .select-option-wrapper.selected .select-option .selected-img {
+      display: block; }
+  #signup-form .checkbox-agree-wrapper input[type="checkbox"] {
+    display: none; }
+  #signup-form .checkbox-agree-wrapper label {
+    position: relative;
+    top: 2px;
+    margin-right: 0.5rem;
+    margin-bottom: 0; }
+  #signup-form .checkbox-agree-wrapper input[type=checkbox] + label {
+    border: 1px solid #aaaaab;
+    border-radius: 3px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+    cursor: pointer; }
+  #signup-form .checkbox-agree-wrapper input[type=checkbox]:checked + label {
+    background: url("../images/checkmark-icon.svg") no-repeat center center;
+    background-size: contain;
+    color: red;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    padding: 0 0 0 0px; }
+  #signup-form .checkbox-agree-wrapper input[type="submit"] {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background-color: #123a68;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer; }
+    #signup-form .checkbox-agree-wrapper input[type="submit"]:hover {
+      transition: 0.3s;
+      opacity: 0.97; }
+
+.text-content-main p {
+  font-size: 14px; }
+
+footer .cookie-notice {
+  padding: 1rem;
+  background-color: #123a68;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
+  footer .cookie-notice .cookie-notice-content {
+    max-width: 1600px;
+    width: 100%;
+    justify-content: space-between; }
+    @media all and (max-width: 1400px) {
+      footer .cookie-notice .cookie-notice-content {
+        flex-direction: column; } }
+    footer .cookie-notice .cookie-notice-content p, footer .cookie-notice .cookie-notice-content a {
+      color: #fff;
+      margin-bottom: 0;
+      font-size: 0.8rem; }
+    footer .cookie-notice .cookie-notice-content .cookie-notice-content-left {
+      max-width: 100%; }
+    footer .cookie-notice .cookie-notice-content .cookie-notice-content-right {
+      max-width: 100%; }
+      @media all and (max-width: 1400px) {
+        footer .cookie-notice .cookie-notice-content .cookie-notice-content-right {
+          margin-top: 1rem; } }
+      footer .cookie-notice .cookie-notice-content .cookie-notice-content-right a {
+        display: inline-block; }
+      footer .cookie-notice .cookie-notice-content .cookie-notice-content-right .btn {
+        text-decoration: none; }
+        footer .cookie-notice .cookie-notice-content .cookie-notice-content-right .btn.btn-accept {
+          border: 1px solid #fff;
+          border-radius: 7px;
+          padding: 0.25rem 1rem;
+          margin-right: 0.5rem; }
+        footer .cookie-notice .cookie-notice-content .cookie-notice-content-right .btn.btn-close {
+          margin-left: 0.5rem;
+          border: 1px solid #fff;
+          border-radius: 100%; }
